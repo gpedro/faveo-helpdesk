@@ -40,6 +40,9 @@ class AppServiceProvider extends ServiceProvider
         });
         Route::singularResourceParameters(false);
         $this->composer();
+        if (config('app.secure_url')) {
+            \URL::forceScheme('https');
+        }
     }
 
     public function composer()
