@@ -2,6 +2,7 @@
 
 return [
     'env' => env('APP_ENV', 'production'),
+    'url_secure' => env('APP_SECURE', false),
     /*
       |--------------------------------------------------------------------------
       | Application Debug Mode
